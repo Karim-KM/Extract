@@ -1,9 +1,9 @@
 # Extract Files from folder using excel workbook
-## Requirements
-- pandas 
-- shutil
+## Requirements 
+- python pandas 
+- python shutil 
 
-## usage
+## usage 🛠
     usage: Extract.py [-h] [-p PATH] [-ext EXTENTION] [-xl EXCEL] [--ignore-existing]
 
     File Extractor based on workbook list Create Excel file with name 'List' and two columns 'Name' and 'Number'
@@ -17,6 +17,7 @@
                             Folder that contins the files (default: None)
     --ignore-existing     skip files that exist (default: False)
 
-## To-do's
+## To-do's ✅
 - [ ] Validate on files that exists.
+
 Hope this script proves useful to somebody else!
