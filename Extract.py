@@ -1,10 +1,8 @@
 # Importing Moduels
 import pandas as pd
 from pathlib import Path
-import os
-import shutil
-# import sys
-import argparse
+import os,shutil,sys,argparse
+
 
 
 def main():
@@ -22,7 +20,10 @@ def main():
     parser.add_argument("--ignore-existing",
                         action="store_true", help="skip files that exist")
     args = parser.parse_args()
-    fldr_dir = args.path
+    fldr_dir = args.path # directory of the files.
+    if len(sys.argv)==1:
+        parser.print_help(sys.stderr)
+        sys.exit(1)
     extract(args, fldr_dir, shtname, move_dir)
 
 
