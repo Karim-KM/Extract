@@ -1,4 +1,4 @@
-# Extract Files from folder using excel workbook
+# Extract Files from folder using python script and excel workbook to search for files
 ## Requirements 
 - python pandas 
 - python shutil 
