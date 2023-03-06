@@ -13,8 +13,8 @@ def main():
     move_dir = 'Output'
     # Setting arguments
     parser = argparse.ArgumentParser(description="""File Extractor based on workbook list
-                                     Create Excel file with name 'List' and two columns 'Name' and 'Number' """,
-                                     formatter_class=argparse.ArgumentDefaultsHelpFormatter)
+                                    Create Excel file with name 'List' and two columns 'Name' and 'Number' """,
+                                    formatter_class=argparse.ArgumentDefaultsHelpFormatter)
     parser.add_argument("-p", "--path", help="Folder that contins the files")
     parser.add_argument("-ext", "--extention",
                         help="Folder that contins the files")
