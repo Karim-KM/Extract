@@ -19,11 +19,8 @@ def main():
     parser.add_argument("-xl", "--excel", help="Folder that contins the files")
     parser.add_argument("--ignore-existing",
                         action="store_true", help="skip files that exist")
-    args = parser.parse_args()
+    args = parser.parse_args(args=None if sys.argv[1:] else ['--help'])
     fldr_dir = args.path # directory of the files.
-    if len(sys.argv)==1:
-        parser.print_help(sys.stderr)
-        sys.exit(1)
     extract(args, fldr_dir, shtname, move_dir)
 
 
