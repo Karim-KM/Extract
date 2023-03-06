@@ -18,5 +18,5 @@
     --ignore-existing     skip files that exist (default: False)
 
 ## To-do's
-    - [ ] Validate on files that exists.
+- [ ] Validate on files that exists.
 Hope this script proves useful to somebody else!
